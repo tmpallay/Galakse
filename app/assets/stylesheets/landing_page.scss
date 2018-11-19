@@ -1,0 +1,209 @@
+// Place all the styles related to the LandingPage controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.containsText {
+
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+#headerWrapper {
+    
+    display:flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    position: relative;
+    flex-direction: row;
+    align-content: stretch;
+    height: 100vh;
+    background-color: black;
+      
+}
+
+.flex-header-container {
+
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	
+	display: -webkit-box;
+  	display: -moz-box;
+ 	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+  
+  	-webkit-flex-flow: row wrap;
+  	justify-content: space-around;
+	
+}
+
+.flex-header-item {
+    
+   	padding: 5px;
+  	width: 200px;
+  	height: 150px;
+  	margin-top: 10px;
+  	
+}
+
+#headerCornerLogo {
+    
+    max-width: 20%;
+    max-height: 20%;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 10px;
+    
+}
+
+#headerLoginButton {
+    
+    width: 10%;
+    height: 6%;
+    margin-top: 40px;
+    margin-right: 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+
+    transition-timing-function: linear;
+    transition-duration: .3s;
+    
+}
+
+#headerLoginButton:hover {
+    
+    background-color: #545353;
+    
+}
+
+.button {
+    
+    background-color: transparent;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    color: white;
+    border: solid;
+    border-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#headerSearchBox {
+    
+    order: 3;
+    position: absolute;
+    margin: auto;
+    
+}
+
+#searchBox {
+    
+    width: 100%;
+    box-sizing: border-box;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    font-size: 32px;
+    background-color: transparent;
+    padding: 8px 20px 8px 20px;
+    
+    transition-timing-function: linear;
+    transition-duration: .3s;
+    
+}
+
+#searchBox:hover {
+    
+    background-color: #545353;
+    
+}
+
+#searchBox:focus {
+    
+    background-color: #545353;
+    
+}
+
+#headerSubmitBox {
+    
+    order: 4;
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-bottom: 7%;
+    
+}
+
+#aboutWrapper {
+
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: #efefef;
+    width: 100%;
+    height: 100%;
+
+}
+
+#titleLogo {
+
+    order: 1;
+    width: 80%;
+    margin-top: 5%;
+    text-align: center;
+
+}
+
+#appPic {
+
+    order: 2;
+    width: 30%;
+
+}
+
+#aboutText {
+
+    order: 2;
+    width: 40%;
+
+}
+
+#rulesWrapper {
+
+    display:flex;
+    align-content: stretch;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+
+}
+
+#rulesList {
+
+    width: 40%;
+
+}
+
+#tablePic {
+
+    width: 40%;
+
+}
+
+#footer {
+
+    clear: both;
+    background-color: black;
+    margin: auto;
+    text-align: center;
+    color: white;
+
+}
+
