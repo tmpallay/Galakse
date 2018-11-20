@@ -2,58 +2,71 @@
 
     <head>
         <title>Galakse</title>
-        <link rel = "stylesheet" type = "text/css" href = "stylesheet.css">
     </head>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 
     <body>
 
-        <div class = "containsText, flex-header-containter" id = "headerWrapper">
+        <div class = "contains-text flex-container">
             
-            <video autoplay muted loop id="introVideo">
-            	<source src="https://storage.googleapis.com/galakse/static_content/galakse_intro.mp4">
-            </video>
-            
-            <div class = "flex-header-item" id = "headerCornerLogo">
-                <img src = "https://storage.googleapis.com/galakse/static_content/galakse_icon_white.png">
-            </div>
-            
-            <div class = "flex-header-item" id = "headerLoginButton">
-                <button class = "button">LOG IN</button>
-            </div>
-            
-            <div class = "flex-header-item" id = "headerSearchBox">
-                <h2>SEARCH FOR YOUR CLASS</h2>
-                <p>We might just have what you're looking for. Learn more</p>
+            <div class = "flex-header-container">
                 
-                <form>
-                    <input id = "searchBox" type = "text" name = "search" placeholder = "Course Name...">
-                </form>
+                <div class = "flex-header-item" id = "galakseIcon">
+                    <img src = "https://storage.googleapis.com/galakse/static_content/galakse_icon_white.png">
+                </div>
                 
+                <div class = "flex-header-item" id = "headerLoginButton">
+                    <button class = "button">LOG IN</button>
+                </div>
+
             </div>
             
-            <div class = "flex-header-item" id = "headerSubmitBox">
-                <h3>CARE TO SUBMIT SOMETHING?</h3>
-                <p>
-                    Contact us here. We'll make sure your work is posted.
-                </p>
+            <div class = "flex-body-container">
+                
+                <div class = "flex-body-item">
+                    <h2>SEARCH FOR YOUR CLASS</h2>
+                    <p>We might just have what you're looking for. Learn more</p>
+                    
+                    <form>
+                        <input id = "searchBox" type = "text" name = "search" placeholder = "Course Name...">
+                    </form>
+                    
+                </div>
+                
+                <div class = "flex-body-item" id = "headerSubmitBox">
+                    <h3>CARE TO SUBMIT SOMETHING?</h3>
+                    <p>
+                        Our contact information is at the bottom of the page. We'll make sure your work is posted.
+                    </p>
+                </div>
+
             </div>
             
         </div>
+
+         <div class = "video-container">
+                <video autoplay muted loop id="introVideo">
+                    <source src="https://storage.googleapis.com/galakse/static_content/galakse_intro.mp4">
+                </video>
+        </div>
         
-        <div id = "aboutWrapper">
+
+
+        <div class = "flex-about-container">
             
-            <div class = "containsText" id = "titleLogo">
-                <b><h1>Galakse</h1></b>
+            <div class = "flex-about-item contains-text" id = "titleLogo">
+                <h1 style="font-family: 'Montserrat', sans-serif; font-size: 100px;">Galaksē</h1>
                 <p>
                     Generationally Accumulated Library of Applicable Knowledge for Students in Engineering
                 </p>
             </div>
             
-            <div class = "picture" id = "appPic">
+            <div class = "flex-about-item image" id = "appPic">
                 <img src = "Resources/appPic.png">
             </div>
             
-            <div class = "textBlock" id = "aboutText">
+            <div class = "flex-about-item contains-text" id = "aboutText">
                 <h2>About</h2>
                 <p class = "text">
                     The purpose of galaksē is to give members of West Virginia University’s IEEE student branch 
@@ -67,9 +80,9 @@
                
         </div>
 
-        <div id = "rulesWrapper">
+        <div class = "flex-rules-container">
 
-            <div class = "containsText" id = "rulesList">
+            <div class = "flex-rules-item contains-text" id = "rulesList">
                 <h2>Rules</h2>
                 <p class = "text">
                     The purpose of this website is to offer academic support to the members of this student org. With that said, 
@@ -86,14 +99,14 @@
                 </p>
             </div>
 
-            <div class = "picture" id = "tablePic">
+            <div class = "flex-rules-item picture" id = "tablePic">
                 <img src = "Resources/tablePic.png">
             </div>
 
         </div>
 
-        <div id = "footer">
-            <p class = "containsText">
+        <div class = "footer contains-text">
+            <p>
                 <b>CONTACT</b>
                 <br /><br />Email | wvuieee+owners@googlegroups.com
             </p>

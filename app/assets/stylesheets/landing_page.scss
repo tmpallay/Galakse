@@ -2,59 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.containsText {
+.contains-text {
 
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
-#headerWrapper {
-    
-    display:flex;
-    justify-content: space-around;
-    align-content: flex-start;
-    position: relative;
-    flex-direction: row;
-    align-content: stretch;
-    height: 100vh;
-    background-color: black;
-      
+body, h1, p {
+    margin: 0px;
+}
+
+
+//=================================================================================
+// BEGIN HEADER AND MAIN CONTENT
+//=================================================================================
+
+
+.flex-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: 1;
+
+    color: white;
+	
 }
 
 .flex-header-container {
+    
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
 
-	padding: 0;
-	margin: 0;
-	list-style: none;
-	
-	display: -webkit-box;
-  	display: -moz-box;
- 	display: -ms-flexbox;
-  	display: -webkit-flex;
-  	display: flex;
-  
-  	-webkit-flex-flow: row wrap;
-  	justify-content: space-around;
-	
+}
+
+.flex-body-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
 }
 
 .flex-header-item {
-    
-   	padding: 5px;
-  	width: 200px;
-  	height: 150px;
-  	margin-top: 10px;
-  	
+
+    margin: 30px;
+
 }
 
-#headerCornerLogo {
-    
-    max-width: 20%;
-    max-height: 20%;
-    margin-top: 40px;
-    margin-left: 40px;
-    margin-right: 10px;
-    
+#introVideo {
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+
+    position: relative;
+    z-index: 0;
+
 }
 
 #headerLoginButton {
@@ -93,17 +102,9 @@
     
 }
 
-#headerSearchBox {
-    
-    order: 3;
-    position: absolute;
-    margin: auto;
-    
-}
-
 #searchBox {
     
-    width: 100%;
+    width: 25vw;
     box-sizing: border-box;
     border: 4px solid #ccc;
     border-radius: 4px;
@@ -129,19 +130,27 @@
 }
 
 #headerSubmitBox {
-    
-    order: 4;
-    align-self: flex-start;
-    margin-left: 5%;
-    margin-bottom: 7%;
-    
+
+    margin-top: 20%;
+    text-align: center;
+
 }
 
-#aboutWrapper {
 
-    align-content: stretch;
+//=================================================================================
+// BEGIN ABOUT SECTION
+//=================================================================================
+
+
+.flex-about-container {
+
+    display: flex;
+    align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+
+    margin-top: 0px;
 
     background-color: #efefef;
     width: 100%;
@@ -149,61 +158,59 @@
 
 }
 
+.flex-about-item {
+
+    width: 50%;
+    margin-top: 30px;
+
+}
+
 #titleLogo {
 
-    order: 1;
-    width: 80%;
-    margin-top: 5%;
+    width: 100%;
     text-align: center;
+    font-size: 30px;
 
 }
 
-#appPic {
 
-    order: 2;
-    width: 30%;
+//=================================================================================
+// BEGIN RULES SECTION
+//=================================================================================
 
-}
 
-#aboutText {
+.flex-rules-container {
 
-    order: 2;
-    width: 40%;
-
-}
-
-#rulesWrapper {
-
-    display:flex;
-    align-content: stretch;
+    display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 
+    margin-top: 0px;
+
+    background-color: #efefef;
     width: 100%;
     height: 100%;
 
 }
 
-#rulesList {
+.flex-rules-item {
 
-    width: 40%;
-
-}
-
-#tablePic {
-
-    width: 40%;
+    width: 50%;
+    margin-top: 30px;
 
 }
 
-#footer {
+//=================================================================================
+// BEGIN FOOTER
+//=================================================================================
 
-    clear: both;
+
+.footer {
+
     background-color: black;
-    margin: auto;
-    text-align: center;
     color: white;
+    text-align: center;
 
 }
-
